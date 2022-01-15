@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="max-w-6xl mx-auto px-4 sm:px-6">
+        <nav class="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+            <svg class="flex justify-start ml-8 md:flex-1 md:m-0" aria-hidden="true" role="img" width="3em" height="3em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g class="icon-tabler" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4l-2 14.5l-6 2l-6-2L4 4z"/><path d="M7.5 8h3v8l-2-1"/><path d="M16.5 8H14a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h1.423a.5.5 0 0 1 .495.57L15.5 15.5l-2 .5"/></g></svg>
+            <ul class="flex justify-center mr-8 md:flex-1 md:m-0">
+                <li class="submenu relative">
+                    <svg class="" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1200 1200"><path d="M1199.398 403.537l-50.323 288.696c-6.206 31.891-31.615 51.282-60.917 51.646H354.5l-14.566 82.106h699.226c36.818 2.798 61.793 28.88 62.242 62.24c-2.678 36.743-28.758 61.786-62.242 62.242H265.773c-41.827-3.762-66.768-37.103-62.242-74.16l33.107-180.104l-50.323-505.88L43.292 145.3C8.341 131.423-5.924 99.805 2.239 67.167c13.573-34.015 46.096-49.556 78.133-41.053l182.752 58.269c24.62 9.229 38.783 29.382 42.377 52.972l10.594 100.646l829.006 92.7c38.09 8.251 58.769 38.422 54.297 72.836zm-744.126 677.619c0 52.476-42.54 95.017-95.018 95.017c-52.477 0-95.017-42.541-95.017-95.017c0-52.478 42.541-95.019 95.017-95.019c52.477.001 95.018 42.543 95.018 95.019zm567.252 0c0 52.476-42.541 95.017-95.019 95.017c-52.477 0-95.017-42.541-95.017-95.017c0-52.478 42.54-95.019 95.017-95.019c52.478.001 95.019 42.543 95.019 95.019z" fill="black"/></svg>
+                    <div class="dropdown-menu absolute z-10 transform -translate-x-80 max-w-md bg-white hidden">
+                        <div id="cart" class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden px-4">       
+                            <table id="cart-list" class="m-auto">
+                                <thead>
+                                    <tr>
+                                        <th class="pr-12">Picture</th>
+                                        <th class="pr-12">Name</th>
+                                        <th class="pr-12">Price</th>
+                                        <th>Quantity</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <p class="text-center py-4">
+                                <a href="#" id="empty-cart" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Vaciar Carrito</a>
+                            </p>
+                        </div>     
+                    </div>  
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="bg-white">
+            <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+
+              <div id="product-list" class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-12">
+
+                <div class="info-card group w-full">
+                  <img src="https://picsum.photos/id/0/800" alt="" class="w-full object-center object-cover group-hover:opacity-75 rounded-lg">
+                  <h3 class="mt-4 text-sm text-gray-700">Laptop</h3>
+                  <p class="price mt-1 mb-2 text-lg font-medium text-gray-900">$1200</p>
+                  <a href="#" id="1" class="add-cart flex justify-center bg-blue-500 hover:bg-blue-700 text-white font-bold rounded py-2">Add to the cart</a>
+                </div>
+          
+                <div class="info-card group w-full">
+                  <img src="https://picsum.photos/id/157/800" alt="" class="w-full object-center object-cover group-hover:opacity-75 rounded-lg">
+                  <h3 class="mt-4 text-sm text-gray-700">Skate</h3>
+                  <p class="price mt-1 mb-2 text-lg font-medium text-gray-900">$200</p>
+                  <a href="#" id="2" class="add-cart flex justify-center bg-blue-500 hover:bg-blue-700 text-white font-bold rounded py-2">Add to the cart</a>
+                </div>
+          
+                <div class="info-card group w-full">
+                  <img src="https://picsum.photos/id/160/800" alt="" class="w-full object-center object-cover group-hover:opacity-75 rounded-lg">
+                  <h3 class="mt-4 text-sm text-gray-700">Phone</h3>
+                  <p class="price mt-1 mb-2 text-lg font-medium text-gray-900">$699</p>
+                  <a href="#" id="3" class="add-cart flex justify-center bg-blue-500 hover:bg-blue-700 text-white font-bold rounded py-2">Add to the cart</a>
+                </div>
+          
+                <div class="info-card group w-full">
+                  <img src="https://picsum.photos/id/250/800" alt="" class="w-full object-center object-cover group-hover:opacity-75 rounded-lg">
+                  <h3 class="mt-4 text-sm text-gray-700">Camera</h3>
+                  <p class="price mt-1 mb-2 text-lg font-medium text-gray-900">$600</p>
+                  <a href="#" id="4" class="add-cart flex justify-center bg-blue-500 hover:bg-blue-700 text-white font-bold rounded py-2">Add to the cart</a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+    </main>
+</body>
+</html>
